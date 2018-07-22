@@ -1,0 +1,19 @@
+{
+  "name": "clock",
+  "version": "0.0.1",
+  "description": "A clock built in Electron",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "Chris Sanders",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^2.0.5",
+    "electron-reload": "^1.2.5"
+  },
+  "dependencies": {
+    "moment": "^2.22.2"
+  }
+}
