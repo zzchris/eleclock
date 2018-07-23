@@ -3,10 +3,12 @@ html, body {
 }
 
 body {
-    -webkit-app-region: drag;
+    /* -webkit-app-region: drag; */
 }
 
 #time-container {
+    /* -webkit-app-region: no-drag; */
+    -webkit-user-select: none;
     height: 100px;
     width: 400px;
     height:100%;
