@@ -6,17 +6,17 @@
   <link rel="stylesheet" href="./contextIndex.css">
 </head>
 
-<body>
-    
+<body onload="init()">
     <div id="sidebar">
         <ul class="sidebar-item-ul">
-            <li class="sidebar-item-li active"><span class="sidebar-text-li">General</span></li>
-            <li class="sidebar-item-li"><span class="sidebar-text-li">Appearance</span></li>
+            <li id="sidebar-general" class="sidebar-item-li active"><span class="sidebar-text-li">General</span></li>
+            <li id="sidebar-appearance" class="sidebar-item-li"><span class="sidebar-text-li">Appearance</span></li>
         </ul>
     </div>
     <div id="main">
         <span>some text here for reference</span>
     </div>
+    <script src="./settings.js"></script>
 </body>
 
 </html>
