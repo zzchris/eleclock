@@ -44,3 +44,14 @@ body {
     background-color:#24458d !important;
     cursor: default !important;
 }
+.hide {
+    display:none;
+}
+.show {
+    display:block;
+}
+#main-general {
+
+}
+#main-appearance {
+}
