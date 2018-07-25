@@ -3,37 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./contextIndex.css">
+    <link rel="stylesheet" href="./settings.css">
 </head>
 
 <body onload="init()">
     <div id="sidebar">
         <ul class="sidebar-item-ul">
-            <li id="sidebar-general" class="sidebar-item-li active">
+            <li id="sidebar-general" class="sidebar-item-li active" tabindex="0">
                 <span class="sidebar-text-li">General</span>
             </li>
-            <li id="sidebar-appearance" class="sidebar-item-li">
+            <li id="sidebar-appearance" class="sidebar-item-li" tabindex="0">
                 <span class="sidebar-text-li">Appearance</span>
             </li>
         </ul>
     </div>
     <div id="main">
-        <div id="main-general"></div>
-        <div id="main-appearance">
+        <div id="main-general" class="main-item"></div>
+        <div id="main-appearance" class="main-item">
             <ul class="main-appearance-ul">
                 <li class="main-appearance-li">
-                    <span class="main-appearance-text-li">Font Family:</span>
+                    <span class="main-appearance-text-li">Font Family</span>
                     <select name="font-selection" id="font-selection-main">
                         <option value="Arial">Arial</option>
                     </select>
                 </li>
                 <li class="main-appearance-li">
-                    <span class="main-appearance-text-li">Font Color:</span>
+                    <span class="main-appearance-text-li">Font Color</span>
                     <input type="text" name="color-selection" id="color-selection-main">
                 </li>
                 <li class="main-appearance-li">
-                    <span class="main-appearance-text-li">Font Size:</span>
-                    <input type="text" name="font-size-selection" id="font-size-selection-main">
+                    <span class="main-appearance-text-li">Font Size</span>
+                    <input type="text" name="font-size-selection" id="font-size-selection-main" size="4">
                 </li>
             </ul>
 

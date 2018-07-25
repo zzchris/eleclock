@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Menu, MenuItem} = require('electron');
+const { app, BrowserWindow, Menu, MenuItem } = require('electron');
 
 require("electron-reload")(__dirname);
 
@@ -28,7 +28,7 @@ function createWindow() {
   });
 
   require('./menus/menu');
-  require('./menus/contextMenu').createMenu(win);  
+  require('./menus/contextMenu').createMenu(win);
 }
 
 // This method will be called when Electron has finished
@@ -53,20 +53,20 @@ app.on('activate', () => {
   }
 })
 
-  // In this file you can include the rest of your app's specific main process
-  // code. You can also put them in separate files and require them here.
+// In this file you can include the rest of your app's specific main process
+// code. You can also put them in separate files and require them here.
 
-  module.exports = {
-    createSettingsMenu() {
-      let settingsWindow = new BrowserWindow({height:600, width:600});
-      
-      settingsWindow.loadFile('./src/menus/contextIndex.html');
+module.exports = {
+  createSettingsMenu() {
+    let settingsWindow = new BrowserWindow({ height: 600, width: 600 });
 
-      settingsWindow.openDevTools();
+    settingsWindow.loadFile('./src/settings/settings.html');
 
-      settingsWindow.on('closed', () => {
-        settingsWindow = null;  
-      });
- 
-    }
+    settingsWindow.openDevTools();
+
+    settingsWindow.on('closed', () => {
+      settingsWindow = null;
+    });
+
   }
+}

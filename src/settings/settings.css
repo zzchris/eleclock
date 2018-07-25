@@ -41,6 +41,7 @@ body {
 .sidebar-text-li {
     color:rgb(270, 270, 270);
     margin-left: 10px;
+    user-select: none;
 }
 .active {
     background-color:#24458d !important;
@@ -60,10 +61,23 @@ body {
 .main-appearance-li {
     list-style-type: none;    
     user-select: none;
+    margin-bottom:10px;
 }
 
 .main-appearance-text-li {
+    user-select: none;
+}
 
+#font-selection-main {
+
+}
+
+#color-selection-main {
+    border-radius:5px;
+}
+
+#font-size-selection-main {
+    border-radius:5px;
 }
 
 #main-general {
@@ -72,4 +86,12 @@ body {
 
 #main-appearance {
    height:inherit; 
+}
+
+#main-appearance-preview {
+    margin-top:200px;
+    margin-left:50px;
+    background-color:white;
+    height:200px;
+    width:300px; 
 }
