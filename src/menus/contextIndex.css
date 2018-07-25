@@ -18,6 +18,7 @@ body {
 
 #main {
    color:white; 
+   margin-right:200px;
 }
 
 .sidebar-item-ul {
@@ -50,8 +51,14 @@ body {
 .show {
     display:block;
 }
+
+.main-appearance-ul {
+    display:inline-block;
+}
+
 #main-general {
 
 }
 #main-appearance {
+    
 }
