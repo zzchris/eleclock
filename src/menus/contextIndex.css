@@ -18,7 +18,8 @@ body {
 
 #main {
    color:white; 
-   margin-right:200px;
+   margin-left:200px;
+   height:100%;
 }
 
 .sidebar-item-ul {
@@ -56,9 +57,19 @@ body {
     display:inline-block;
 }
 
-#main-general {
+.main-appearance-li {
+    list-style-type: none;    
+    user-select: none;
+}
+
+.main-appearance-text-li {
 
 }
+
+#main-general {
+    height:inherit;
+}
+
 #main-appearance {
-    
+   height:inherit; 
 }

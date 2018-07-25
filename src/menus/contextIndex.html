@@ -2,25 +2,44 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="./contextIndex.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./contextIndex.css">
 </head>
 
 <body onload="init()">
     <div id="sidebar">
         <ul class="sidebar-item-ul">
-            <li id="sidebar-general" class="sidebar-item-li active"><span class="sidebar-text-li">General</span></li>
-            <li id="sidebar-appearance" class="sidebar-item-li"><span class="sidebar-text-li">Appearance</span></li>
+            <li id="sidebar-general" class="sidebar-item-li active">
+                <span class="sidebar-text-li">General</span>
+            </li>
+            <li id="sidebar-appearance" class="sidebar-item-li">
+                <span class="sidebar-text-li">Appearance</span>
+            </li>
         </ul>
     </div>
     <div id="main">
         <div id="main-general"></div>
         <div id="main-appearance">
             <ul class="main-appearance-ul">
-                <li class="main-apperance-li"><span>Font Family:</span></li>
-                <li class="main-appearance-li"><span>Font Color:</span></li>
-                <li class="main-appearance-li"><span>Font Size:</span></li>
+                <li class="main-appearance-li">
+                    <span class="main-appearance-text-li">Font Family:</span>
+                    <select name="font-selection" id="font-selection-main">
+                        <option value="Arial">Arial</option>
+                    </select>
+                </li>
+                <li class="main-appearance-li">
+                    <span class="main-appearance-text-li">Font Color:</span>
+                    <input type="text" name="color-selection" id="color-selection-main">
+                </li>
+                <li class="main-appearance-li">
+                    <span class="main-appearance-text-li">Font Size:</span>
+                    <input type="text" name="font-size-selection" id="font-size-selection-main">
+                </li>
             </ul>
+
+            <div id="main-appearance-preview">
+
+            </div>
         </div>
     </div>
     <script src="./settings.js"></script>
