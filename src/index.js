@@ -1,15 +1,18 @@
 const moment = require('moment');
-const { remote} = require('electron');
+const { remote } = require('electron');
+let timeContainer = document.getElementById('time-container');
+console.log(`timecontainer: ${timeContainer}`);
+let tContainer = () => { return timeContainer };
 
 let wX;
 let wY;
 let dragging = false;
 
-document.getElementById('time-container').addEventListener('mousedown', function (e) {
+/*timeContainer.addEventListener('mousedown', function (e) {
     dragging = true;
     wX = e.pageX;
     wY = e.pageY;
-});
+});*/
 
 window.addEventListener('mousemove', function (e) {
     e.stopPropagation();
@@ -26,17 +29,17 @@ window.addEventListener('mousemove', function (e) {
     }
 });
 
-window.addEventListener('mouseup',function () {
+window.addEventListener('mouseup', function () {
     dragging = false;
 });
-    // var clear = drag('body');
+// var clear = drag('body');
 function init() {
     animateTime();
 
     setInterval(() => {
         animateTime();
     }, 1000);
-    
+
     // setupListeners();
 }
 
@@ -45,16 +48,18 @@ function formatTime(format) {
 }
 
 function animateTime() {
-    document.querySelector('#time-container').innerHTML = (formatTime('MMMM Do YYYY, h:mm:ss a'));
+    timeContainer.innerHTML = (formatTime('MMMM Do YYYY, h:mm:ss a'));
 }
 
 // function setupListeners() {
-    window.addEventListener('contextmenu', (event) => {
-        // event.preventDefault();
-        console.log('target '+event);
-        if (event.target.id == "time-container") {
-            console.log("Right-click");
-            // menu.popup();
-        }
-    });
+window.addEventListener('contextmenu', (event) => {
+    // event.preventDefault();
+    console.log('target ' + event);
+    if (event.target.id == "time-container") {
+        console.log("Right-click");
+        // menu.popup();
+    }
+});
 // }
+
+module.exports = { "chris": timeContainer };

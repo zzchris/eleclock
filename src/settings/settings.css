@@ -91,7 +91,27 @@ body {
 #main-appearance-preview {
     margin-top:200px;
     margin-left:50px;
-    background-color:white;
+    border: 1px dashed white;
+    border-radius: 5px;
     height:200px;
     width:300px; 
+    text-align: center;
+}
+
+#test-sample-text {
+    line-height: 200px;
+}
+/* #main-appearance-footer {
+    height:70px;
+    position:relative;
+    bottom: 0px;
+    background-color: #212121;
+    width:100%;
+} */
+
+.blue-bottom {
+    border:none;
+    background-color:#24458d;
+    color:white;
+
 }
